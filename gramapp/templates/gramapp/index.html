@@ -1,0 +1,984 @@
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head id="Head1"><title>
+	Gramchaitanya Online
+</title><meta name="description" content="Grampanchayat Tax Pay Online Portal"><meta name="keywords" content="Grampanchayat Tax,Gramchaitanya,Gram Chaitanya,Gramchaitanya Online,Gram Chaitanya Online,Grampanchayat,Gram panchayat,Grampanchayat Online,Gram panchayat Online,Grampanchayat Software,Grampanchayat Tax,Gramchaitanya Online,
+    Grampanchayat Online,Property Tax,Grampanchayat Tax Pay Online Portal, Pay Online "><link href="{% static 'gramapp/css/style.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div id="container">
+
+	<!-- Start of Page Header -->
+
+	<div id="page_header">
+
+		<div id="page_heading">
+        <h2 class="style1">ग्रामपंचायत माण            
+        &nbsp;</h2>
+		</div>
+
+		<div class="clearthis">&nbsp;</div>
+
+	</div>
+        
+	<!-- End of Page Header -->
+
+
+	<!-- Start of Page Menu -->
+
+	<div id="page_menu">
+        <ul id="ulmenu1">
+            <li><a href="#">About Us</a></li>
+            <li><a href="">Home</a></li>
+		    <li><a href="">मुखपृष्ठ</a></li>
+		    <li><a href="">खातेदार</a></li>
+            <li><a href="">Grampanchayat Log-in</a></li>
+            <li><a href="">Write Message</a></li>
+            <li class="last"><a href="">Website Feedback</a></li>
+		</ul>          
+        
+	</div>
+
+	<!-- End of Page Menu -->
+
+	<!-- Start of Main Content Area -->
+
+	<div id="main_content">
+        <div class="h_divider">&nbsp;</div>
+         <div class="main">
+            
+    <form method="post" action="./GPHome.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="MainContent_ToolkitScriptManager1_HiddenField" id="MainContent_ToolkitScriptManager1_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=tgEHEO1msy8PeWIKqmZ5PmFMSWcu5mJlttXh9CVYHGCuOeOiwJCOfbsKHYgjbs2W19JOIeXRVH_TC-EeTqWiYiUl5ylS4MfHH6tkz2Qs35A1&amp;t=636480529623431523" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=Fl4GRvH_RQdk5IQGCH6OZD220u8manf_-_Ksxrn-fSsh5aWYbtWyKXjx2vIxzorKtuTgb6rm4CU_FTH3w4MWumY9Ny3cFWgj_6s4sRYuigitrkmSfcNYMPITHmNIR8xcSNvQbux4InOHdb7hPunsfQ2&amp;t=f2cd5c5" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=j-y5xnrJURRWVtSjsoaZehAJdSZ8HAJ21gqToioOeZNwl4ZwdeCLhrlrU52S4OLIl1F7z73-kJNtare6_atHKcj2UVByXZsJp9_--keGOIy3HuxSg-xpdunFwPttLwIjmYEWkFsQYgxNDW-Fo1RwcQ2&amp;t=f2cd5c5" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C6793EA9">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ABwlXJ2sDMd1APA7buMRN41AXCoV6DeoF13nC/YssKldt2qIT0tzR8GEZ7b4W/jk3InEUPdQMwf8bD7HGHyOIiT+MfApzfcJ6o7zhBbUkd4wJezxt+1u3Vaj1o6tecOWsCStcU4GvVRR1CsxLI+ycbwKLjC8SO8tx/TuJbbN+B/+7zW1xwuMgF/8fSq9JG3yLfQLT2K/f/dsE3tB8w5x9z6jgEXzBK3sN+MdtVNokkisCWWyyzAF9k+bUnNBoWeXW9hHUa6WWBcQAyFMtAlNpA==">
+</div>
+        <div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ToolkitScriptManager1', 'form1', ['tctl00$MainContent$UpdatePanel1','MainContent_UpdatePanel1'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        </div>
+        
+       <table style="width:100%">
+            <tbody><tr>
+                <td class="style2">
+                ग्रामपंचायत
+                <span id="MainContent_lblgpname" class="style2">माण</span>
+                </td>
+            </tr>
+        </tbody></table>
+        <div id="MainContent_UpdatePanel1">
+	
+                <table>
+                    <tbody><tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </tbody></table>
+        <br>
+                <table style="width:100%">
+                    <tbody><tr>
+                        
+                        <td align="left">  
+                            <img id="MainContent_Image0" src="images/gpmaan.jpeg" style="height:269px;width:550px;"><table>
+                                
+                            </table>                   
+                        </td>
+                        <td class="style4">
+                            &nbsp;</td>
+                        <td align="left">  
+                            <table style="width:100%">
+                                <tbody><tr>
+                                    
+                                    <td>
+                                        <table>
+                                            <tbody><tr>
+                                                <td class="style5">
+                                                    <img id="MainContent_Image1" src="images/VDO SHELAR.jpeg" style="height:110px;width:100px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <span id="MainContent_lblgs">श्री मदन शेलार</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    मा.
+                                                    <span id="MainContent_lblgs0">ग्रामविकास अधिकारी</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <span id="MainContent_Label1" style="color:#FF6600;">मोबाईल नं.  </span>
+                                                    <span id="MainContent_mobilegs" style="color:#FF6600;">9850161969</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <a id="MainContent_LinkButton1" href="javascript:__doPostBack('ctl00$MainContent$LinkButton1','')" style="color:Blue;">अधिक माहिती</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                
+                                                    <a id="MainContent_LinkButton2" href="javascript:__doPostBack('ctl00$MainContent$LinkButton2','')" style="color:Blue;">यांना लिहा</a>
+                                                
+                                                </td>
+                                            </tr>
+                                        </tbody></table>  
+                                    </td>
+                                   
+                                    <td>
+                                        <table>
+                                            <tbody><tr>
+                                                <td class="style5">
+                                                    <img id="MainContent_Image2" src="images/SARPANCH.jpg" style="height:110px;width:100px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <span id="MainContent_lblsp">सौ अर्चना सचिन आढाव</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                माननीय सरपंच</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <span id="MainContent_Label2" style="color:#FF6600;">मोबाईल नं.  </span>
+                                                    <span id="MainContent_mobilesp" style="color:#FF6600;">9822958793</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                
+                                                    <a id="MainContent_LinkButton3" href="javascript:__doPostBack('ctl00$MainContent$LinkButton3','')" style="color:Blue;">अधिक माहिती</a>
+                                                
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                
+                                                    <a id="MainContent_LinkButton4" href="javascript:__doPostBack('ctl00$MainContent$LinkButton4','')" style="color:Blue;">यांना लिहा</a>
+                                                
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    
+                                    <td>
+                                        <table>
+                                            <tbody><tr>
+                                                <td class="style5">
+                                                    <img id="MainContent_Image3" src="images/SHASHIKANT PRAKASH DHUMAL.jpg" style="height:110px;width:100px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <span id="MainContent_lblusp">श्री शशिकांत प्रकाश धुमाळ</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                माननीय उपसरपंच</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    <span id="MainContent_Label3" style="color:#FF6600;">मोबाईल नं.  </span>
+                                                    <span id="MainContent_mobileusp" style="color:#FF6600;">9881977698</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                    
+                                                    <a id="MainContent_LinkButton5" href="javascript:__doPostBack('ctl00$MainContent$LinkButton5','')" style="color:Blue;">अधिक माहिती</a>
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="style5">
+                                                
+                                                    <a id="MainContent_LinkButton6" href="javascript:__doPostBack('ctl00$MainContent$LinkButton6','')" style="color:Blue;">यांना लिहा</a>                                                
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    
+                                </tr>
+                            </tbody></table>  
+                        </td>
+                        
+                    </tr>
+                </tbody></table>
+                <div class="h_divider">&nbsp;</div>
+                <br>
+                <div id="menuicons">
+                    
+                        <ul class="menuicons">
+                                <li><a href="MilkatSearch.aspx">Online Payment</a></li>
+                                <li><a href="MilkatSearch.aspx">मिळकत माहिती</a></li>
+                                <li><a href="BirthSearch.aspx">जन्म दाखला</a></li>
+                                <li><a href="DeathSearch.aspx">मृत्यू दाखला</a></li>
+                                <li><a href="VivahSearch.aspx">विवाह दाखला</a></li>
+                                <li><a href="BirthDeathSearch.aspx">उपजत मृत्यू दाखला</a></li>
+                                <li><a href="GramsevakSearch.aspx">ग्रामसेवक/ग्रा.वि.अ. कार्यकाल</a></li>
+                                <li><a href="SarpanchSearch.aspx">सरपंच कार्यकाल</a></li>
+                                <li><a href="UpSarpanchSearch.aspx">उपसरपंच कार्यकाल</a></li>
+                                <li><a href="">सदस्य माहिती</a></li>
+                                <li><a href="KarmachariSearcha.aspx">कर्मचारी माहिती</a></li>
+                                <li><a href="WebletterToGP.aspx">ग्रामपंचायतीला पत्र</a></li>
+                                <li><a href="PVikasSearch.aspx">पुर्ण झालेली विकास कामे</a></li>
+                                <li><a href="CVikasSearch.aspx">चालू असलेली विकास कामे</a></li>
+                                <li><a href="NVikasSearch.aspx">नियोजीत विकास कामे</a></li>
+                                <li><a href="SabhaSearch.aspx">झालेल्या सभेची माहिती</a></li>
+                                <li><a href="Billcreate.aspx">बील</a></li>
+                                <li class="last"><a href="JamaKharchaSearch.aspx">जमा-खर्च पत्रक</a></li>
+                        </ul>
+                        
+                    </div>
+                <br>
+                <div class="h_divider">&nbsp;</div>
+                
+                    
+                    <h2 class="style9">ग्रामपंचायत विषयक</h2>
+                        
+                 
+                
+                    
+                        &nbsp;
+                    
+                        <textarea name="ctl00$MainContent$txtinfo" rows="2" cols="20" readonly="readonly" id="MainContent_txtinfo" style="background-color:White;border-style:None;font-size:Medium;height:100px;width:100%;">माण महाराष्ट्र राज्यातील पुणे जिल्ह्यातील मुळशी तालुक्यात वसलेले आहे. हे मुळशी पासून 20 किमी वर स्थित आहे. पुणे शहर पासून 17 किमी आणि मुंबईचे मुख्य शहर (महाराष्ट्राची राजधानी) पासून 103 किमी. पुणे जिल्ह्यातील मुळशी तालुक्यातील आणि देशातील सर्वात मोठे आयटी पार्क राजीव गांधी आयटी पार्क अशी ओळख असलेली माण ग्रामपंचायत.  श्री माणदेवी आणि श्री काळभैरवनाथ हे आमच्या मान गांवांतील देवता आहेत. गावचा एकूण क्षेत्रफळ 2051 हेक्टर आहे. आंतरराष्ट्रीय स्तरावर राजीव गांधी इन्फोटेक पार्क हे ग्रामपंचायतीच्या परिसरात वसलेले आहे. आमच्या शेतकर्याने एकूण 597 हेक्टर क्षेत्रास दिले. राजीव गांधी इन्फोटेक पार्कमुळे ग्रामपंचायतीच्या उत्पन्नामध्ये वाढ झाली आहे. 4 कोटी आणि लोकसंख्या देखील वाढली आहे. बहुतेक लोक गाव पासून शहराकडे पलायन करत आहेत. पण आम्ही त्यांना मान येथे स्थलांतरीत करू इच्छितो. आमच्या खेड्यात राज्यातील शहरी विकासासारख्या आपल्या गावाचा विकास व्हावा.</textarea>
+                    
+                    
+                        &nbsp;
+                
+                <table>
+                <tbody><tr>
+                    <td align="left" style="font-size: medium; font-weight: 500; color: #990000;" class="style12">
+                        &nbsp;<a href="https://www.google.co.in/maps/place/Maan+Gaon+Gram+Panchayat/@18.5594545,73.5367692,11z/data=!4m5!3m4!1s0x0:0xa96c3d7a6b55de65!8m2!3d18.5741609!4d73.7089026" id="MainContent_link8" target="blank" class="style11" title="This is a link for the Grampanchayat Location on Google map page"> Grampanchayat Location on Google map</a>&nbsp;
+                    </td>
+                    <td align="Right">
+                    <a id="MainContent_HyperLink26" href="MilkatSearch.aspx"><img src="Images/payment%20-%20Copy.jpg" alt="HyperLink"></a>
+                    </td>
+                </tr> 
+                </tbody></table>
+
+<table>
+    <tbody><tr>
+        <td>
+            <div class="content">
+                    <!-- Always on top. Fixed position, fixed width, relative to content width-->
+                    <div class="sidebar1">
+                        <h2 class="style6">आदर्श तक्ता</h2>
+                        
+                                            <div style="overflow:auto; height:260px;">
+                                            <table cellpadding="3" cellspacing="0" rules="all" style="border: solid 2px #336699;">
+                                                <tbody><tr style="background-color: Green; color: White;">
+                                                    <th style="width:95px;">
+                                                        </th>
+                                                    <th style="width:135px;">
+                                                        </th>
+                                                </tr>
+                                                </tbody><tbody>
+                                                    
+                                            <tr>  
+                                                <td class="style7">
+                                                    स्थापना दिनांक
+                                                </td>
+                                                <td>
+                                                    01/04/1956
+                                                </td>
+                                            </tr><tr>
+                                            </tr>
+                                                <tr><td class="style7">
+                                                    ग्रा.प.फोन नं.
+                                                </td>
+                                                <td>
+                                                    9850161969
+                                                </td>
+                                            </tr><tr>
+                                            </tr>
+                                                <tr><td class="style7">
+                                                    Email address
+                                                </td>
+                                                <td>
+                                                    grampanchayat.maan@gmail.com
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink5_0" href="SadasyaSearch.aspx" style="color:Blue;"> सदस्य संख्या</a>
+                                                </td>
+                                                <td>
+                                                    17
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink6_0" href="KarmachariSearcha.aspx" style="color:Blue;"> कर्मचारी संख्या</a>
+                                                </td>
+                                                <td>
+                                                    25
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    लोकसंख्या
+                                                </td>
+                                                <td>
+                                                    8222
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    क्षेत्रफळ
+                                                </td>
+                                                <td>
+                                                    19054600
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    एकुण मिळकती
+                                                </td>
+                                                <td>
+                                                    3993
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    ग्रा.प.उत्पन्न
+                                                </td>
+                                                <td>
+                                                    167243916
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink7_0" href="TelephoneSearch.aspx" style="color:Blue;"> टेलिफोन ऑफिस</a>
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink8_0" href="MobileSearch.aspx" style="color:Blue;"> मोबाईल टॉवर</a>
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink9_0" href="PostofficeSearch.aspx" style="color:Blue;"> पोष्ट ऑफिस</a>
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    गटार लांबी
+                                                </td>
+                                                <td>
+                                                    3000
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    रस्ता लांबी
+                                                </td>
+                                                <td>
+                                                    30000
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    गोबर गॅस
+                                                </td>
+                                                <td>
+                                                    36
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink10_0" href="GasagencySearch.aspx" style="color:Blue;"> गॅस एजन्सी</a>
+                                                </td>
+                                                <td>
+                                                    36
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    शौचालय
+                                                </td>
+                                                <td>
+                                                    4315
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink11_0" href="MahilamandalSearch.aspx" style="color:Blue;"> महिला मंडळ</a>
+                                                </td>
+                                                <td>
+                                                    5
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink12_0" href="TarunmandalSearch.aspx" style="color:Blue;"> तरुण मंडळ</a>
+                                                </td>
+                                                <td>
+                                                    11
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink13_0" href="BhajanimandalSearch.aspx" style="color:Blue;"> भजनी मंडळ</a>
+                                                </td>
+                                                <td>
+                                                    5
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink14_0" href="SocietySearch.aspx" style="color:Blue;"> सहकारी सोसायटी</a>
+                                                </td>
+                                                <td>
+                                                    3
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink15_0" href="BachatgatSearch.aspx" style="color:Blue;"> बचत गट</a>
+                                                </td>
+                                                <td>
+                                                    45
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink16_0" href="BanklistSearch.aspx" style="color:Blue;"> बँक</a>
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    वॉर्ड
+                                                </td>
+                                                <td>
+                                                    6
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink17_0" href="SchoolSearch.aspx" style="color:Blue;"> शाळा</a>
+                                                </td>
+                                                <td>
+                                                    8
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink18_0" href="CollegeSearch.aspx" style="color:Blue;"> कॉलेज</a>
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink19_0" href="AnganwadiSearch.aspx" style="color:Blue;"> अंगणवाडी</a>
+                                                </td>
+                                                <td>
+                                                    4
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    मंदिर
+                                                </td>                                               
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink20_0" href="ArogyakendraSearch.aspx" style="color:Blue;"> आरोग्य केंद्र</a>
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink21_0" href="HospitalSearch.aspx" style="color:Blue;"> हॉस्पीटल्स</a>
+                                                </td>
+                                                <td>
+                                                    3
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink22_0" href="AnimalhospitalSearch.aspx" style="color:Blue;"> पशु दवाखना</a>
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink23_0" href="RashanSearch.aspx" style="color:Blue;"> स्वस्त धान्य दुकान</a>
+                                                </td>
+                                                <td>
+                                                    2
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink24_0" href="MSEBSearch.aspx" style="color:Blue;"> विद्युत मंडळ</a>
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    बस थांबे
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    रेल्वे स्टेशन
+                                                </td>
+                                                <td>
+                                                    0
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    वाडी , वस्ती
+                                                </td>
+                                                <td>
+                                                    12
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    रोजगार साधने
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    शहर अंतर
+                                                </td>
+                                                <td>
+                                                    15
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    पिके
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    पर्जन्यमान
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    पाणीपुरवठा सुविधा
+                                                </td>
+                                                <td>
+                                                    5
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    स्मशानभूमी
+                                                </td>
+                                                <td>
+                                                    3
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    आठवडे बाजार
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    पोलिस चौकी
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    सभागृह
+                                                </td>
+                                                <td>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td>
+                                                    <a id="MainContent_ListView1_HyperLink25_0" href="MangalkaryalaySearch.aspx" style="color:Blue;"> मंगल कार्यालय</a>
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    वाचनालय
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    दुध संकलन केंद्र
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    पेट्रोल पंप
+                                                </td>
+                                                <td>
+                                                    4
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    कचरा व्यवस्थापन
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    उद्याने
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    सेवाभावी संस्था
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                                <tr><td class="style7">
+                                                    अग्नीशामन
+                                                </td>                                          
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                                <tr><td class="style7">
+                                                    रुग्नवाहिका
+                                                </td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                        
+                    </div>
+                    <!-- Scrollable div with main content -->
+                    <div id="scrollable2">
+                        <marquee style="font-family: 'Arial Unicode MS'; color: #990000;" behavior="alternate"><span id="ctl00_ContentPlaceHolder1_lbltitle" style="color:#990000;font-family:Arial Unicode MS;font-size:20px;font-weight:bold;">विशेष सुचना / अद्यायावत माहिती </span></marquee>
+                        <div>
+                        
+                                <div class="list">
+                                    <table>
+                                        
+                                        
+                                        
+                                        <tbody><tr><td align="left"><h6 class="style10">5 % Exemption on House Tax / घरपट्टी वर ५ % सुट</h6></td></tr>
+                                        <tr><td><p class="list">If the tax payer pays all tax as per assessment in first six month of the financial year, the tax payer shall be entitled to get five per cent. exemption on tax payment. कर आकारणी करण्यात येणाऱ्या आर्थिक वर्षातील पहिल्या सहा महिन्यांत करदात्याने संपूर्ण कर भरला असेल तर तो करदाता कराच्या रकमेवर ५ % इतक्या प्रमाणात सूट देण्यासाठी हक्कदार असेल.</p></td></tr>
+                                    </tbody></table>
+                                </div>
+                            
+                                <div class="list">
+                                    <table>
+                                        
+                                        
+                                        
+                                        <tbody><tr><td align="left"><h6 class="style10">अद्यायावत नविन संकेतस्थळ</h6></td></tr>
+                                        <tr><td><p class="list">महाराष्ट्र शासन राजपत्र दिनांक 31 डिसेबर 2015 नुसार इमारतीच्या भांडवली मुल्यावर आधारित कर आकारणी संपूर्ण महाराष्ट्रात सर्व ग्रामपंचायतींना लागू करण्यात आली अाहे. त्यानुसार अद्यायावत अशा नविन स्वरुपातील संकेतस्थळ ग्रामपंचायत हिंजवडी मधील सर्व मिळकत धारकांच्या सेवेसाठी ग्रामपंचायती कडून सादर.</p></td></tr>
+                                    </tbody></table>
+                                </div>
+                            
+                                <div class="list">
+                                    <table>
+                                        
+                                        
+                                        
+                                        <tbody><tr><td align="left"><h6 class="style10">5 % Exemption on House Tax / घरपट्टी वर  ५ % सुट</h6></td></tr>
+                                        <tr><td><p class="list">If the tax payer pays all tax as per assessment in first six month of the financial year, the tax payer shall be entitled to get five per cent. exemption on tax payment. कर आकारणी करण्यात येणाऱ्या आर्थिक वर्षातील पहिल्या सहा महिन्यांत करदात्याने संपूर्ण कर भरला असेल तर तो करदाता कराच्या रकमेवर ५ % इतक्या प्रमाणात सूट देण्यासाठी हक्कदार असेल.</p></td></tr>
+                                    </tbody></table>
+                                </div>
+                            
+                                <div class="list">
+                                    <table>
+                                        
+                                        
+                                        
+                                        <tbody><tr><td align="left"><h6 class="style10">अद्यायावत नविन संकेतस्थळ</h6></td></tr>
+                                        <tr><td><p class="list">महाराष्ट्र शासन राजपत्र दिनांक 31 डिसेबर 2015 नुसार इमारतीच्या भांडवली मुल्यावर आधारित कर आकारणी संपूर्ण महाराष्ट्रात सर्व ग्रामपंचायतींना लागू करण्यात आली अाहे. त्यानुसार अद्यायावत अशा नविन स्वरुपातील संकेतस्थळ ग्रामपंचायत हिंजवडी मधील सर्व मिळकत धारकांच्या सेवेसाठी ग्रामपंचायती कडून सादर.</p></td></tr>
+                                    </tbody></table>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+                    <div class="sidebar2">
+                        <h2 class="style6">महत्वाची संकेतस्थळे</h2>
+                            <table>
+                                <tbody><tr>
+                                    <td class="style8">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style5">
+                                    <a id="MainContent_HyperLink1" href="http://igrmaharashtra.gov.in/eASR/frmMap.aspx" target="_blank"><img src="images/Mahasul.jpg" alt="HyperLink"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style8">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style5">
+                                        <a id="MainContent_HyperLink2" href="https://aaplesarkar.maharashtra.gov.in/en/" target="_blank"><img src="images/ApaleSarkar.jpg" alt="HyperLink"></a>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style8">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style5">
+                                        <a id="MainContent_HyperLink3" href="https://mahatenders.gov.in/nicgep/app" target="_blank"><img src="images/etender.jpg" alt="HyperLink"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style8">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style5">
+                                        <a id="MainContent_HyperLink4" href="https://www.maharashtra.gov.in/1145/Government-Resolutions" target="_blank"><img src="images/Shasannirnay.jpg" alt="HyperLink"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style8">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                    </div>
+            </div>
+        </td>
+    </tr>
+</tbody></table>
+<div> 
+ 
+</div>                     
+            
+</div>
+        <div id="MainContent_UpdateProgress1" style="display:none;" role="status" aria-hidden="true">
+	
+                <span class="style3">Please Wait.. </span>
+            
+</div>
+       <div class="clearthis">&nbsp;</div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("MainContent_ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("MainContent_UpdateProgress1"));
+});
+//]]>
+</script>
+</form>
+
+        </div>
+        <div class="clear">
+        </div>		
+	</div>
+
+	<!-- End of Main Content Area -->
+
+	<div class="clearthis">&nbsp;</div>
+	<!-- Start of Page Footer -->
+        <div class="Mantra">
+            <p class="Mantra"> हरे कृष्ण हरे कृष्ण.&nbsp;  कृष्ण कृष्ण हरे हरे |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;हरे राम हरे राम.&nbsp;  राम राम हरे हरे || </p>
+        </div>
+    <br>
+	<div id="page_footer">
+    <div class="h_divider">&nbsp;</div>
+        <div>
+            <ul class="social-icons">
+	            <li>
+                    
+		            <a href="https://facebook.com" id="link1" target="blank">
+			            <img src="images/social-media-icons/facebook.png" alt="Facebook">
+		            </a>
+		            <a href="https://twitter.com" id="link2" target="blank">
+			            <img src="images/social-media-icons/twitter.png" alt="Twitter">
+		            </a>
+		            <a href="https://www.instagram.com/?hl=en" id="link3" target="blank">
+			            <img src="images/social-media-icons/instagram.png" alt="Instagram">
+		            </a>
+		            <a href="https://plus.google.com/collections/featured" id="link4" target="blank">
+			            <img src="images/social-media-icons/Google+.png" alt="Google+">
+		            </a>
+		            <a href="https://www.youtube.com/" id="link5" target="blank">
+			            <img src="images/social-media-icons/youtube.png" alt="YouTube">
+		            </a>
+		            <a href="https://in.linkedin.com/" id="link6" target="blank">
+                        <img src="images/social-media-icons/linkedin.png" alt="Linkedin">
+		            </a>		
+		            <a href="https://accounts.google.com" id="link7" target="blank">
+			            <img src="images/social-media-icons/email.png" alt="Mail">
+		            </a>
+	            </li>
+            </ul>           
+        </div>
+        <br>
+        <div id="footerInfo">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="CopyrightPolicy.aspx" title="THIS IS A LINK FOR THE copyright policy PAGE">Copyright Policy</a>&nbsp;|&nbsp;
+                    <a href="Disclaimer.aspx" title="THIS IS A LINK FOR THE DISCLAIMER PAGE">Disclaimer</a>&nbsp;|&nbsp;
+                    <a href="HyperlinkPolicy.aspx" title="THIS IS A LINK FOR THE hyperlink policy PAGE">Hyperlink Policy</a>&nbsp;|&nbsp;
+                    <a href="PrivacyPolicy.aspx" title="THIS IS A LINK FOR THE privacy policy PAGE">Privacy Policy</a>&nbsp;|&nbsp;
+                    <a href="Refundcancell.aspx" title="THIS IS A LINK FOR THE Refunds &amp; Cancellation policy PAGE">Refunds &amp; Cancellation Policy</a>&nbsp;|&nbsp;
+                    <a href="TermsANDconditions.aspx" title="THIS IS A LINK FOR THE Terms and condition PAGE">Terms &amp; conditions</a>&nbsp;|&nbsp;
+                    <a href="GPContactUS.aspx" title="THIS IS A LINK FOR THE contact us PAGE">Contact Us</a>&nbsp;|&nbsp;     
+        </div>
+        <br>
+        <span style="color:Black;">  Website Designed, Developed, Hosted &amp; maintained by <a style="color:Black;">Chaitanya Infosys , Pune</a>. Content provided by Grampanchayat Office, Government of Maharashtra.    </span> 
+		
+		<div class="clearthis">&nbsp;</div>	
+    
+    <div id="footerCopyright">
+        
+        <p style="color:Black; text-align:center;">Copyright © 2014 Chaitanya Infosys, Pune</p>
+    </div>
+    <br>
+    <div style="background: #000 none repeat scroll 0 0;padding: 7px 15px 0;text-align: center;">    
+          <ul class="sub-sites">      
+              <li style="border-left: 0px!important ">
+             |&nbsp;<a target="_blank" href="https://swachhbharat.mygov.in/"><img title="Swachh Bharat (External Site that opens in a new window)" alt="Swachh Bharat" src="images/swachh-bharat.png"></a>&nbsp;|&nbsp;     
+              <a target="_blank" href="http://digitalindia.gov.in/"><img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="images/digital-india-logo.png"></a>&nbsp;|&nbsp;     
+              <a target="_blank" href="https://data.gov.in"><img title="Data Portal (External Site that opens in a new window)" alt="Data Portal" src="images/data-gov-logo.png"></a>&nbsp;|&nbsp;     
+              <a target="_blank" href="https://india.gov.in"><img title="National Portal of India (External Site that opens in a new window)" alt="National Portal of India" src="images/india-gov-logo.png"></a>&nbsp;|&nbsp;      
+              <a target="_blank" href="https://mygov.in"><img title="MyGov (External Site that opens in a new window)" alt="MyGov" src="images/mygov-footer-logo.png"></a>&nbsp;|&nbsp;      
+              <a target="_blank" href="http://meity.gov.in"><img title="Meity(External Site that opens in a new window)" alt="Meity" src="images/Meity_logo.png"></a>&nbsp;|&nbsp;      
+              <a target="_blank" href="http://www.pmindia.gov.in/en/"><img title="PMINDIA(External Site that opens in a new window)" alt="PMINDIA" src="images/pm-india-logo.png"></a>&nbsp;|&nbsp;
+              </li>
+          </ul>  
+      </div>
+    </div>
+	<!-- End of Page Footer -->
+
+</div>
+<br>
+<br>
+<br>
+
+
+</body></html>
