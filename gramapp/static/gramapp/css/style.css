@@ -205,7 +205,7 @@ input {
 	width: 1080px;
 	height: 107px;
 	color: #fff;
-	background: url('./images/logo42.jpg '); /* repeat-x 0px 0px;*/
+	background: url('../images/logo42.jpg'); /* repeat-x 0px 0px;*/
 	overflow: hidden;
 }
 
