@@ -79,8 +79,16 @@ WSGI_APPLICATION = 'grampanchayatmaan.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'grampanchayatmaan',
+        'USER': 'shivaji',
+        'PASSWORD': '12345678',
+        'HOST': '127.0.0.1',  # or 'localhost'
+        'PORT': '3306',       # default MySQL port
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
+        
     }
 }
 

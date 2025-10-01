@@ -4,7 +4,7 @@ from django.db import models
 class Member(models.Model):
     name = models.CharField(max_length=100)
     designation = models.TextField()
-    contact = models.IntegerField()
+    contact = models.BigIntegerField()
     photo = models.ImageField(upload_to='post_images/', blank=True, null=True)
 
 
