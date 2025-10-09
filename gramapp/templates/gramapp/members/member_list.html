@@ -12,17 +12,16 @@
         
         <div class="row">
             {% for member in members %}
-                <div class="col-md-4 mb-4">
+                <div class="col-md-2 mb-2">
                     <div class="card" style="width: auto;">
                         {% if member.photo %}
-                            <img src="{{ member.photo.url }}" class="card-img-top" alt="{{ member.name }}">
+                            <img src="{{ member.photo.url }}" class="card-img-top" style="height: 250px;" alt="{{ member.name }}">
                         {% else %}
                             <img src="{% static 'default_profile.jpg' %}" class="card-img-top" alt="No image">
                         {% endif %}
                         <div class="card-body">
-                            <h5 class="card-title">{{ member.name }}</h5>
+                            <h5 class="card-title" style="font-size: 16px;">{{ member.name }}</h5>
                             <p class="card-text">Contact: {{ member.contact }}</p>
-                            <a href="#" class="btn btn-primary">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -31,8 +30,9 @@
             {% endfor %}
         </div>
     </div>
-
-    <!-- Bootstrap JS (optional, for interactive components) -->
+    <div class="container">
+        <a href="{% url 'index' %}" class="btn btn-primary  mt-3" style="text-align: center;">Back to Home</a>    <!-- Bootstrap JS (optional, for interactive components) -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
