@@ -125,7 +125,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ToolkitScriptMana
                         </td>
                     </tr>
                 </tbody></table>
-        <br>
+            <br>
                 <table style="width:100%">
                     <tbody><tr>
                         
@@ -138,124 +138,47 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ToolkitScriptMana
                             &nbsp;</td>
                         <td align="left">  
                             <table style="width:100%">
-                                <tbody><tr>
-                                    
-                                    <td>
-                                        <table>
-                                            <tbody><tr>
-                                                <td class="style5">
-                                                    <img id="MainContent_Image1" src="{% static 'gramapp/images/VDO SHELAR.jpeg' %}" alt="VDO SHELAR" style="height:110px;width:100px;">
-
-                                                    <!-- <img id="MainContent_Image1" src="images/VDO SHELAR.jpeg" style="height:110px;width:100px;"> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <span id="MainContent_lblgs">श्री मदन शेलार</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    मा.
-                                                    <span id="MainContent_lblgs0">ग्रामविकास अधिकारी</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <span id="MainContent_Label1" style="color:#FF6600;">मोबाईल नं.  </span>
-                                                    <span id="MainContent_mobilegs" style="color:#FF6600;">9850161969</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <a id="MainContent_LinkButton1" href="javascript:__doPostBack('ctl00$MainContent$LinkButton1','')" style="color:Blue;">अधिक माहिती</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                
-                                                    <a id="MainContent_LinkButton2" href="javascript:__doPostBack('ctl00$MainContent$LinkButton2','')" style="color:Blue;">यांना लिहा</a>
-                                                
-                                                </td>
-                                            </tr>
-                                        </tbody></table>  
-                                    </td>
-                                   
-                                    <td>
-                                        <table>
-                                            <tbody><tr>
-                                                <td class="style5">
-                                                    <img id="MainContent_Image2" src="{% static 'gramapp/images/SARPANCH.jpg' %}" style="height:110px;width:100px;">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <span id="MainContent_lblsp">सौ अर्चना सचिन आढाव</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                माननीय सरपंच</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <span id="MainContent_Label2" style="color:#FF6600;">मोबाईल नं.  </span>
-                                                    <span id="MainContent_mobilesp" style="color:#FF6600;">9822958793</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                
-                                                    <a id="MainContent_LinkButton3" href="javascript:__doPostBack('ctl00$MainContent$LinkButton3','')" style="color:Blue;">अधिक माहिती</a>
-                                                
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                
-                                                    <a id="MainContent_LinkButton4" href="javascript:__doPostBack('ctl00$MainContent$LinkButton4','')" style="color:Blue;">यांना लिहा</a>
-                                                
-                                                </td>
-                                            </tr>
-                                        </tbody></table>
-                                    </td>
-                                    
-                                    <td>
-                                        <table>
-                                            <tbody><tr>
-                                                <td class="style5">
-                                                    <img id="MainContent_Image3" src="{% static 'gramapp/images/SHASHIKANT PRAKASH DHUMAL.jpg' %}" style="height:110px;width:100px;">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <span id="MainContent_lblusp">श्री शशिकांत प्रकाश धुमाळ</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                माननीय उपसरपंच</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    <span id="MainContent_Label3" style="color:#FF6600;">मोबाईल नं.  </span>
-                                                    <span id="MainContent_mobileusp" style="color:#FF6600;">9881977698</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                    
-                                                    <a id="MainContent_LinkButton5" href="javascript:__doPostBack('ctl00$MainContent$LinkButton5','')" style="color:Blue;">अधिक माहिती</a>
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="style5">
-                                                
-                                                    <a id="MainContent_LinkButton6" href="javascript:__doPostBack('ctl00$MainContent$LinkButton6','')" style="color:Blue;">यांना लिहा</a>                                                
-                                                </td>
-                                            </tr>
-                                        </tbody></table>
+                                    <tr>
+                                        {% for member in top_members %}
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td class="style5">
+                                                        <img src="{{ member.photo.url }}" alt="{{ member.name }}" style="height:110px;width:100px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style5">
+                                                        <span>{{ member.name }}</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style5">
+                                                        मा. <span>{{ member.designation }}</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style5">
+                                                        <span style="color:#FF6600;">मोबाईल नं. </span>
+                                                        <span style="color:#FF6600;">{{ member.mobile }}</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style5">
+                                                        <a href="{% url 'member_profile' member.id %}" style="color:Blue;">अधिक माहिती</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="style5">
+                                                        <a href="mailto:{{ member.email }}" style="color:Blue;">यांना लिहा</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        {% endfor %}
+                                    </tr>
+                                </table>
+                                </table>
                                     </td>
                                     
                                 </tr>

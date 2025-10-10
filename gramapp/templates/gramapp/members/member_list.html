@@ -20,7 +20,11 @@
                             <img src="{% static 'default_profile.jpg' %}" class="card-img-top" alt="No image">
                         {% endif %}
                         <div class="card-body">
-                            <h5 class="card-title" style="font-size: 16px;">{{ member.name }}</h5>
+                            <h5 class="card-title" style="font-size: 16px;">
+                                <a href="{% url 'member_profile' member.id %}" style="text-decoration: none; color: inherit;">
+                                    {{ member.name }}
+                                </a>
+                            </h5>                              
                             <p class="card-text">Contact: {{ member.contact }}</p>
                         </div>
                     </div>

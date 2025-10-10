@@ -20,7 +20,11 @@
                             <img src="{% static 'default_profile.jpg' %}" class="card-img-top" alt="No image">
                         {% endif %}
                         <div class="card-body">
-                            <h5 class="card-title" style="font-size: 16px;">{{ employee.name }}</h5>
+                            <h5 class="card-title" style="font-size: 16px;">
+                                <a href="{% url 'employee_profile' employee.id %}" style="text-decoration: none; color: inherit;">
+                                    {{ employee.name }}
+                                </a>
+                            </h5>                            
                             <p class="card-text" style="font-size: 12px;">Contact: {{ employee.contact }}</p>
                         </div>
                     </div>
